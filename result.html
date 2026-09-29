@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy - Your Plan</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f6;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 25px;
+        }
+
+        .details,
+        .day-card,
+        .info-card {
+            background: white;
+            padding: 22px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            transition: opacity 0.5s ease;
+        }
+
+        .day-card h3 {
+            margin-top: 0;
+        }
+
+        .content,
+        .info-content {
+            white-space: pre-line;
+            line-height: 1.7;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            resize: vertical;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💪 Your FitBuddy Plan</h1>
+
+    {% if message %}
+
+    <div class="success-message">
+        ✅ {{ message }}
+    </div>
+
+    {% endif %}
+
+
+    <div class="details">
+
+        <h2>Your Details</h2>
+
+        <p>
+            <strong>Name:</strong>
+            {{ name }}
+        </p>
+
+        <p>
+            <strong>User ID:</strong>
+            {{ user_id }}
+        </p>
+
+        <p>
+            <strong>Age:</strong>
+            {{ age }}
+        </p>
+
+        <p>
+            <strong>Weight:</strong>
+            {{ weight }} kg
+        </p>
+
+        <p>
+            <strong>Fitness Goal:</strong>
+            {{ goal }}
+        </p>
+
+        <p>
+            <strong>Fitness Level:</strong>
+            {{ level }}
+        </p>
+
+        <p>
+            <strong>Workout Intensity:</strong>
+            {{ intensity }}
+        </p>
+
+        <p>
+            <strong>Available Time:</strong>
+            {{ time }}
+        </p>
+
+    </div>
+
+
+    <h2>📅 Your 7-Day Plan</h2>
+
+
+    {% for day in days %}
+
+    <div class="day-card">
+
+        <h3>🏃 {{ day.day }}</h3>
+
+        <div class="content">
+            {{ day.content }}
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+
+    {% if recovery %}
+
+    <div class="info-card">
+
+        <h2>🌿 Recovery Tips</h2>
+
+        <div class="info-content">
+            {{ recovery }}
+        </div>
+
+    </div>
+
+    {% endif %}
+
+
+    {% if healthy %}
+
+    <div class="info-card">
+
+        <h2>🥗 Nutrition Tip</h2>
+
+        <div class="info-content">
+            {{ healthy }}
+        </div>
+
+    </div>
+
+    {% endif %}
+
+
+    <div class="info-card">
+
+        <h2>📝 Give Feedback</h2>
+
+        <p>
+            Tell FitBuddy what you would like to change in your plan.
+        </p>
+
+        <form action="/submit-feedback" method="post">
+
+            <input
+                type="hidden"
+                name="plan_id"
+                value="{{ plan_id }}"
+            >
+
+            <textarea
+                name="feedback"
+                rows="5"
+                placeholder="Tell FitBuddy what you would like to change..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                🔄 Update My Plan
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <a class="back" href="/">
+        ← Create another plan
+    </a>
+
+</div>
+
+
+<script>
+    setTimeout(function() {
+
+        const message = document.querySelector(".success-message");
+
+        if (message) {
+
+            message.style.opacity = "0";
+
+            setTimeout(function() {
+                message.remove();
+            }, 500);
+
+        }
+
+    }, 3000);
+</script>
+
+</body>
+</html>

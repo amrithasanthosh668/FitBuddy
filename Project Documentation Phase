@@ -1,0 +1,47 @@
+# Phase 7: Project Documentation
+
+## Project Name
+FitBuddy
+
+## Introduction
+FitBuddy is a fitness assistance application designed to help users manage their fitness activities and receive suitable fitness guidance.
+
+## Purpose
+The purpose of FitBuddy is to make fitness planning easier for users, especially beginners.
+
+## Benefits
+
+- Easy to use
+- Provides fitness guidance
+- Helps users plan their workouts
+- Saves time
+- Provides a simple fitness platform
+- Helps users maintain fitness goals
+
+## Technologies Used
+
+- Python
+- FastAPI
+- HTML
+- CSS
+- JavaScript
+- Visual Studio Code
+
+## How the Application Works
+
+The user first opens the FitBuddy application. The user enters the required fitness information and selects a fitness goal. The information is sent to the backend. The backend processes the information and generates a suitable fitness recommendation. The result is then displayed to the user.
+
+## Future Enhancements
+
+- User login and registration
+- Database integration
+- Personalized diet plans
+- Exercise videos
+- Progress tracking
+- AI-based recommendations
+- Mobile application
+- Fitness reminders
+
+## Conclusion
+
+FitBuddy aims to provide a simple and useful platform for people who want to improve and manage their fitness activities.

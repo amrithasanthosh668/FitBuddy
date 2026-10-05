@@ -1,0 +1,57 @@
+# Phase 5: Project Development
+
+## Project Name
+FitBuddy
+
+## Development Environment
+
+The project is developed using:
+
+- Python
+- FastAPI
+- HTML
+- CSS
+- JavaScript
+- Visual Studio Code
+
+## Project Structure
+
+FitBuddy/
+│
+├── app/
+│   └── main.py
+│
+├── static/
+│
+├── templates/
+│   └── index.html
+│
+└── .venv/
+
+## Backend Development
+
+FastAPI is used to create the backend of FitBuddy.
+
+The backend receives requests from the frontend and processes the user's fitness information.
+
+## Frontend Development
+
+HTML is used to create the user interface.
+
+The interface allows users to enter their fitness details and generate a fitness plan.
+
+## Application Workflow
+
+1. User opens FitBuddy.
+2. User enters fitness information.
+3. User submits the information.
+4. Backend receives the information.
+5. The application processes the information.
+6. A fitness plan/recommendation is generated.
+7. The result is displayed to the user.
+
+## Development Status
+
+The basic FastAPI backend has been created and tested successfully.
+
+Further development includes connecting the frontend with the backend and implementing the complete fitness plan generation functionality.

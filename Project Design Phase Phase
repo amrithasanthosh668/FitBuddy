@@ -1,0 +1,58 @@
+# Phase 3: Project Design
+
+## Project Name
+FitBuddy
+
+## System Architecture
+
+The FitBuddy application consists of three main parts:
+
+1. Frontend
+2. Backend
+3. Data/Processing Layer
+
+### Frontend
+The frontend provides the user interface. Users can enter their fitness information and view their fitness plan.
+
+### Backend
+The backend handles user requests and processes the submitted information.
+
+### Data/Processing
+The application processes the user's fitness information and generates appropriate recommendations.
+
+## Technology Stack
+
+- Frontend: HTML, CSS, JavaScript
+- Backend: Python with FastAPI
+- Development Tool: Visual Studio Code
+- Browser: Google Chrome
+
+## Basic Workflow
+
+User
+↓
+Enter Fitness Details
+↓
+Submit Information
+↓
+FastAPI Backend
+↓
+Process Information
+↓
+Generate Fitness Plan
+↓
+Display Result to User
+
+## Main Modules
+
+### User Input Module
+Collects the user's fitness details.
+
+### Fitness Processing Module
+Processes the information provided by the user.
+
+### Fitness Plan Module
+Generates a suitable fitness plan.
+
+### Result Module
+Displays the fitness recommendations to the user.

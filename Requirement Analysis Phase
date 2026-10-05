@@ -1,0 +1,103 @@
+# Phase 2: # Phase 2: Requirement Analysis
+
+## Project Name
+FitBuddy
+
+## Functional Requirements
+
+1. The system should allow users to enter their basic fitness information.
+2. The system should accept information such as age, height, weight, and fitness goal.
+3. The system should process the user information.
+4. The system should generate a suitable fitness plan or recommendation.
+5. The system should display the generated result clearly.
+6. The system should provide a simple interface for users.
+
+## Non-Functional Requirements
+
+### Usability
+The application should be easy to understand and use.
+
+### Performance
+The application should provide results quickly.
+
+### Reliability
+The application should work correctly without unexpected errors.
+
+### Security
+User information should be handled safely.
+
+### Maintainability
+The code should be organized so that it can be modified and improved easily.
+
+## Hardware Requirements
+- Computer/Laptop
+- Minimum 4 GB RAM
+- Internet connection
+
+## Software Requirements
+- Python
+- Visual Studio Code
+- FastAPI
+- HTML
+- CSS
+- JavaScript (if required)
+- Web browser
+
+## User Requirements
+The user should be able to:
+- Open the application
+- Enter fitness details
+- Select a fitness goal
+- Generate a fitness plan
+- View the result
+
+## Project Name
+FitBuddy
+
+## Functional Requirements
+
+1. The system should allow users to enter their basic fitness information.
+2. The system should accept information such as age, height, weight, and fitness goal.
+3. The system should process the user information.
+4. The system should generate a suitable fitness plan or recommendation.
+5. The system should display the generated result clearly.
+6. The system should provide a simple interface for users.
+
+## Non-Functional Requirements
+
+### Usability
+The application should be easy to understand and use.
+
+### Performance
+The application should provide results quickly.
+
+### Reliability
+The application should work correctly without unexpected errors.
+
+### Security
+User information should be handled safely.
+
+### Maintainability
+The code should be organized so that it can be modified and improved easily.
+
+## Hardware Requirements
+- Computer/Laptop
+- Minimum 4 GB RAM
+- Internet connection
+
+## Software Requirements
+- Python
+- Visual Studio Code
+- FastAPI
+- HTML
+- CSS
+- JavaScript (if required)
+- Web browser
+
+## User Requirements
+The user should be able to:
+- Open the application
+- Enter fitness details
+- Select a fitness goal
+- Generate a fitness plan
+- View the result

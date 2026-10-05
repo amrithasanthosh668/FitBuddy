@@ -1,0 +1,35 @@
+# Phase 6: Project Testing
+
+## Project Name
+FitBuddy
+
+## Objective of Testing
+Testing is performed to make sure that the FitBuddy application works correctly and produces the expected results.
+
+## Test Cases
+
+| Test Case | Input | Expected Result | Status |
+|---|---|---|---|
+| 1 | Open application | Application should open | Pass |
+| 2 | Open API documentation | FastAPI Swagger page should appear | Pass |
+| 3 | Enter valid fitness details | Fitness plan should be generated | To Test |
+| 4 | Enter incomplete details | System should handle the input properly | To Test |
+| 5 | Submit fitness form | Backend should receive the request | To Test |
+| 6 | Generate plan | Result should be displayed | To Test |
+
+## Testing Methods
+
+### Functional Testing
+Checks whether each feature works according to requirements.
+
+### Interface Testing
+Checks whether the user interface works correctly.
+
+### Input Testing
+Checks different types of user input.
+
+### Error Testing
+Checks how the application handles invalid or missing input.
+
+## Result
+The basic FastAPI application has been tested successfully. Further testing will be performed after completing the frontend and fitness plan generation features.

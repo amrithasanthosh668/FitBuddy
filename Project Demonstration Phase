@@ -1,0 +1,56 @@
+# Phase 8: Project Demonstration
+
+## Project Name
+FitBuddy
+
+## Demonstration Objective
+The demonstration explains the purpose, features, working process, and final output of the FitBuddy application.
+
+## Points to Explain in the Demo Video
+
+### 1. Project Name
+The name of our project is FitBuddy.
+
+### 2. Purpose
+FitBuddy is designed to help users receive simple and personalized fitness guidance.
+
+### 3. Problem
+Many people find it difficult to create a suitable fitness routine and maintain their fitness goals.
+
+### 4. Solution
+FitBuddy provides users with fitness recommendations based on the information they provide.
+
+### 5. Technologies Used
+- Python
+- FastAPI
+- HTML
+- CSS
+- JavaScript
+
+### 6. Working Process
+
+First, the user opens the FitBuddy application.
+
+Then the user enters their fitness information and selects their fitness goal.
+
+The information is submitted to the application.
+
+The backend processes the information.
+
+Finally, the fitness plan/recommendation is displayed.
+
+### 7. Final Output
+The final output is a working FitBuddy fitness application that provides fitness guidance to users.
+
+## Demo Video Checklist
+
+- Show the project name.
+- Explain the purpose.
+- Explain the problem.
+- Explain the solution.
+- Show the application.
+- Demonstrate the features.
+- Show the input.
+- Show the output.
+- Explain the technologies used.
+- Explain the benefits.
